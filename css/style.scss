@@ -1,7 +1,11 @@
 body{
-    background: rgb(169, 63, 255);
+    background: linear-gradient(-200deg, #6705c9 40%,#e100ffc7);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
     .container{
-        background: rgb(255, 251, 255);
+        background: #2f025c;
+        color: white;    
         width: 25%;
         height: 35vh;
         position: absolute;
@@ -18,17 +22,38 @@ body{
             bottom: 5%;
             left: 50%;  
             transform: translate(-50%, -50%);
+            color: cyan;
             }
         form{
             margin-left: 15%;
-            margin-top: 5%;  
+            margin-top: 5%;
+            .borderBottom{
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            bottom: -2%;
+            left:0.6%;
+            transform: skewX(45deg);
+            background: cyan;    
+            z-index: 1;
+            }
+            .borderRight{
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            right: -1%;
+            top: 1.2%;
+            transform: skewY(40deg);
+            z-index: 2;
+            background: cyan;   
+            }  
             label{
             margin-bottom: 2px;
             display: block;    
             }
             input{
             display: block;
-            background: rgb(160, 140, 177);
+            background: rgba(255, 255, 255, 0.26);
             border: none;
             margin-bottom: 10px;
             height: 35px;
@@ -36,9 +61,15 @@ body{
             }
             button{
             display: block;
+            background: #E100FF;
+            border: none;
+            color: white;
+            cursor: pointer;
             padding: 10px;
-            width: 81%;
-            margin-top: 20px;
+            width: 30%;
+            text-align: center;
+            margin-left: 26%;
+            margin-top: 22px;
             }
             
         }

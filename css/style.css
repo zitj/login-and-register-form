@@ -1,9 +1,13 @@
 body {
-  background: #a93fff;
+  background: linear-gradient(-200deg, #6705c9 40%, #e100ffc7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body .container {
-  background: #fffbff;
+  background: #2f025c;
+  color: white;
   width: 25%;
   height: 35vh;
   position: absolute;
@@ -25,11 +29,36 @@ body .container a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: cyan;
 }
 
 body .container form {
   margin-left: 15%;
   margin-top: 5%;
+}
+
+body .container form .borderBottom {
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: -2%;
+  left: 0.6%;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  background: cyan;
+  z-index: 1;
+}
+
+body .container form .borderRight {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  right: -1%;
+  top: 1.2%;
+  -webkit-transform: skewY(40deg);
+          transform: skewY(40deg);
+  z-index: 2;
+  background: cyan;
 }
 
 body .container form label {
@@ -39,7 +68,7 @@ body .container form label {
 
 body .container form input {
   display: block;
-  background: #a08cb1;
+  background: rgba(255, 255, 255, 0.26);
   border: none;
   margin-bottom: 10px;
   height: 35px;
@@ -48,8 +77,14 @@ body .container form input {
 
 body .container form button {
   display: block;
+  background: #E100FF;
+  border: none;
+  color: white;
+  cursor: pointer;
   padding: 10px;
-  width: 81%;
-  margin-top: 20px;
+  width: 30%;
+  text-align: center;
+  margin-left: 26%;
+  margin-top: 22px;
 }
 /*# sourceMappingURL=style.css.map */
