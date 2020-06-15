@@ -6,12 +6,13 @@
 <html lang="en">
 <?php include 'head.php'?>
 <body>
-
+<img class="astronaut" src="img/astronaut2.png" alt="astronaut">
 <div class="container">
         <h3><?php echo $head_title?></h3>
     <form action="">
-        <label for="emaim">Your e-mail <span> &nbsp;</span></label>
+        <label for="email"> Your e-mail<span> &nbsp;</span></label>
         <input type="text">
+        
         <label for="password">Your password <span>&nbsp;</span></label>
         <input type="password">
         

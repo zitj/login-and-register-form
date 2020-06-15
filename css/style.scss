@@ -3,6 +3,32 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+   
+    .astronaut{
+        animation: astronaut 10s infinite ease;
+    } 
+    @keyframes astronaut{
+        0%{
+            opacity: .15;
+            margin-top: -10px;
+            margin-left: 10px;
+            transform: rotate(0deg)
+
+        }
+        50%{
+            opacity: .3;
+            margin-top: 10px;
+            margin-left: 5px;
+            transform: rotate(8deg)
+        }
+        100%{
+            opacity: .15;
+            margin-top: -10px;
+            margin-left: 10px;
+            transform: rotate(0deg)
+        }
+    } 
     .container{
         background: #2f025c;
         width: 25%;
@@ -17,9 +43,12 @@ body{
             margin-top: 6%;
         }
         a{
+            display: block;
             text-align: center;  
             position: absolute;
-            bottom: 2.1%;
+            padding: 8px;
+            margin-top: 20px;
+            bottom: -2.8%;
             left: 50%;  
             transform: translate(-50%, -50%);
             color: cyan;
@@ -78,7 +107,7 @@ body{
             &:focus{
                 background: rgba(255, 255, 255, 0.205);
             }
-                
+               
             }
             button{
             display: block;
@@ -109,6 +138,11 @@ body{
             }
             
         }
+   
+        }
        
-    }
+        
+       
+    
+    
 }
