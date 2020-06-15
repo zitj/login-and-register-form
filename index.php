@@ -1,15 +1,21 @@
 <?php 
-
+    $head_title = 'Log in form';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in form</title>
-</head>
+<?php include 'head.php'?>
 <body>
-    <h1><?php echo "We are connected!"?></h1>
+
+<div class="container">
+    <form action="">
+        <label for=""></label>
+        <input type="text">
+        <label for=""></label>
+        <input type="text">
+        <button>Log in</button>
+    </form>
+</div><!-- end .container -->
+    
 </body>
 </html>
