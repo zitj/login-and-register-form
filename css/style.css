@@ -78,6 +78,11 @@ body .container form label {
   color: rgba(255, 255, 255, 0.842);
 }
 
+body .container form label span {
+  color: #ffee00;
+  font-size: 0.8em;
+}
+
 body .container form input {
   display: block;
   background: rgba(255, 255, 255, 0.123);
