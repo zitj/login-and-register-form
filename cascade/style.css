@@ -100,12 +100,7 @@ body .container a:active {
   font-size: 1em;
 }
 
-body .container form {
-  margin-left: 15%;
-  margin-top: 4.5%;
-}
-
-body .container form .borderBottom {
+body .container .borderBottom {
   height: 5px;
   width: 100%;
   position: absolute;
@@ -117,7 +112,7 @@ body .container form .borderBottom {
   z-index: 1;
 }
 
-body .container form .borderRight {
+body .container .borderRight {
   width: 5px;
   height: 100%;
   position: absolute;
@@ -127,6 +122,11 @@ body .container form .borderRight {
           transform: skewY(40deg);
   z-index: 2;
   background: cyan;
+}
+
+body .container form {
+  margin-left: 15%;
+  margin-top: 4.5%;
 }
 
 body .container form label {
@@ -206,5 +206,80 @@ body .container.signup .borderRight {
 
 body .container.signup a {
   bottom: -0.8%;
+}
+
+body .profile {
+  height: 480px;
+}
+
+body .profile h3 {
+  margin-bottom: 30px;
+}
+
+body .profile a {
+  bottom: 2%;
+}
+
+body .profile .borderBottom {
+  bottom: -1%;
+}
+
+body .profile .borderRight {
+  top: 0.5%;
+}
+
+body .profile .profilePicture {
+  background: grey;
+  height: 30%;
+  width: 30%;
+  margin-left: 35%;
+  position: relative;
+}
+
+body .profile .profilePicture a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  padding: 0;
+  bottom: -22%;
+  width: 100%;
+  background: #E100FF;
+  color: white;
+}
+
+body .profile .profilePicture a:focus {
+  padding: 1px;
+}
+
+body .profile .profilePicture a:hover {
+  background: #e100ffc7;
+  padding: 1px;
+}
+
+body .profile .profilePicture a:active {
+  background: #E100FF;
+  padding: 0;
+}
+
+body .profile .data {
+  margin-top: 14%;
+}
+
+body .profile .data p {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+body .profile .data p:nth-of-type(3) {
+  font-size: .95em;
+}
+
+body .profile .data p:nth-of-type(2) {
+  margin-top: 0;
+}
+
+body .profile .data p:nth-of-type(1) {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

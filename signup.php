@@ -10,7 +10,7 @@
 
 <div class="container signup">
         <h3><?php echo $head_title . " form"?></h3>
-    <form action="">
+    <form action="profile.php">
         <label for="name"> Your name<span> &nbsp;</span></label>
         <input type="text">
         <label for="surname"> Your surname<span> &nbsp;</span></label>

@@ -10,7 +10,7 @@
 
 <div class="container">
     <h3><?php echo $head_title . " form"?></h3>
-    <form action="">
+    <form action="profile.php">
         <label for="email"> Your e-mail<span> &nbsp;</span></label>
         <input type="text">
         
