@@ -32,13 +32,14 @@ body{
         }
     } 
     .container{
-        background: #2f025c;
+        background: #2f025cef;
         width: 440px;
         height: 340px;
         position: absolute;
         top: 50%;
         left:50%;
         transform: translate(-50%, -50%);
+
         h3{
             color: white;
             text-align: center;
@@ -73,7 +74,7 @@ body{
             bottom: -2%;
             left:0.6%;
             transform: skewX(45deg);
-            background: cyan;    
+            background: cyan;
             z-index: 1;
             }
             .borderRight{
@@ -84,7 +85,7 @@ body{
             top: 1.2%;
             transform: skewY(40deg);
             z-index: 2;
-            background: cyan;   
+            background: cyan; 
             }  
             label{
             margin-bottom: 2px;
@@ -141,6 +142,18 @@ body{
             
         }
    
+        }
+        .container.signup{
+            height: 500px;
+           .borderBottom{
+               bottom: -1%;
+           }
+           .borderRight{
+               top: .5%;
+           }
+           a{
+               bottom: -0.8%;
+           }
         }
        
         

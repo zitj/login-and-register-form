@@ -5,8 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'head.php'?>
-<body>
-<img class="astronaut" src="img/astronaut2.png" alt="astronaut">
+
 <div class="container">
         <h3><?php echo $head_title?></h3>
     <form action="">

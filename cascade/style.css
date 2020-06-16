@@ -60,7 +60,7 @@ body .astronaut {
 }
 
 body .container {
-  background: #2f025c;
+  background: #2f025cef;
   width: 440px;
   height: 340px;
   position: absolute;
@@ -190,5 +190,21 @@ body .container form button:active {
   background: #E100FF;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+body .container.signup {
+  height: 500px;
+}
+
+body .container.signup .borderBottom {
+  bottom: -1%;
+}
+
+body .container.signup .borderRight {
+  top: .5%;
+}
+
+body .container.signup a {
+  bottom: -0.8%;
 }
 /*# sourceMappingURL=style.css.map */
