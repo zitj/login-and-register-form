@@ -1,5 +1,7 @@
 <?php 
-    $head_title = 'Sign in form';
+    $head_title = 'Sign in';
+    $hyperlink = 'signup.php';
+    $hyperlinkText = 'Sign up here';
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +9,7 @@
 <?php include 'head.php'?>
 
 <div class="container">
-        <h3><?php echo $head_title?></h3>
+    <h3><?php echo $head_title . " form"?></h3>
     <form action="">
         <label for="email"> Your e-mail<span> &nbsp;</span></label>
         <input type="text">
@@ -15,13 +17,6 @@
         <label for="password">Your password <span>&nbsp;</span></label>
         <input type="password">
         
-        <button>Sign in</button>
-        <div class="borderRight"></div>
-        <div class="borderBottom"></div>
-    </form>
-    <a href="#">Sign up here</a>
-
-</div><!-- end .container -->
-
-</body>
+<?php include 'footer.php'?>
+    
 </html>
