@@ -1,9 +1,9 @@
 body {
-  background: linear-gradient(-200deg, #6705c9 40%, #e100ffc7);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: yellow;
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
+  -webkit-animation: fluid infinite 1s ease;
+          animation: fluid infinite 1s ease;
 }
 
 body .astronaut {
