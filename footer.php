@@ -4,7 +4,7 @@ $hyperlinkText;
 ?>
 
 
-<button ><?php echo $head_title ?></button>
+<button type="submit" name="submit" value="submit"><?php echo $head_title ?></button>
         
     </form>
     <div class="borderRight"></div>
