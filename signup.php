@@ -65,7 +65,7 @@
         }
         if(mysqli_query($connection, $sql)){
             //success
-            header('Location: profile.php');
+            header('Location: index.php');
         }else{
             //error
             echo 'Query error' . mysqli_query($connection);
