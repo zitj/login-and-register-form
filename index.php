@@ -1,4 +1,5 @@
 <?php 
+    include('database_connection.php');
     $head_title = 'Sign in';
     $hyperlink = 'signup.php';
     $hyperlinkText = 'Sign up here';
