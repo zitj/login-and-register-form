@@ -10,8 +10,6 @@
 
     $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    print_r($users);
-
     $errors = ['email' => '', 'password' => ''];
     $email = $password = '';
 
