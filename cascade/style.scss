@@ -92,9 +92,19 @@ body{
                 margin-bottom: 2px;
                 display: block;
                 color: rgba(255, 255, 255, 0.842);
+                position: relative;
                 span{
-                color: rgb(255, 238, 0);
-                font-size: 0.8em;
+                color: rgb(229, 255, 0);
+                font-size: 0.7em;
+                position: absolute;
+                margin-top: 3px;
+                margin-left: 9px;
+                &.wrong{
+                    color: rgb(255, 0, 0);
+                }
+                &.correct{
+                    color: rgb(51, 255, 0);
+                }
             }    
             }
                 input{

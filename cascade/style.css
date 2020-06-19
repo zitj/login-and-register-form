@@ -133,11 +133,23 @@ body .container form label {
   margin-bottom: 2px;
   display: block;
   color: rgba(255, 255, 255, 0.842);
+  position: relative;
 }
 
 body .container form label span {
-  color: #ffee00;
-  font-size: 0.8em;
+  color: #e5ff00;
+  font-size: 0.7em;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 9px;
+}
+
+body .container form label span.wrong {
+  color: red;
+}
+
+body .container form label span.correct {
+  color: #33ff00;
 }
 
 body .container form input {

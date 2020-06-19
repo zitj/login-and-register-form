@@ -10,23 +10,23 @@
 
     $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    $errors = ['email' => '', 'password' => ''];
+    $succeses = $errors = $required = ['email' => '', 'password' => ''];
+    
     $email = $password = '';
 
     if(isset($_POST['submit'])){
         
         // email validation
         if(empty($_POST['email'])){
-            $errors['email'] = 'Email is required!';
+            $required['email'] = 'Email is required!';
         }else{
             $email = $_POST['email'];
             foreach($users as $e_mail){
                 if($email == $e_mail['email']){
-                    $errors['email'] = 'Your email is correct!';
+                    $successes['email'] = 'Your email is correct!';
                     break;
                 }else{
                     $errors['email'] = 'This email does not exist!';
-                    // $errors['email'] = $e_mail['email'];
                 }
             }
         }
@@ -34,12 +34,12 @@
         //password validation
 
         if(empty($_POST['password'])){
-            $errors['password'] = 'Password is required!';
+            $required['password'] = 'Password is required!';
         }else{
             $password = $_POST['password'];
             foreach($users as $pass_word){
                 if($password == $pass_word['pass']){
-                    $errors['password'] = 'Your password is correct!';
+                    $successes['password'] = 'Your password is correct!';
                     break;
                 }else{
                     $errors['password'] = 'Wrong password';
@@ -52,7 +52,7 @@
                 header('Location: profile.php');
             }else{
                 //error
-                echo 'something is not right!';
+                
             }
         }
         
@@ -67,11 +67,15 @@
 <div class="container">
     <h3><?php echo $head_title . " form"?></h3>
     <form action="index.php" method="POST">
-        <label for="email"> Your e-mail<span>&nbsp;<?php echo $errors['email']?></span></label>
-        <input type="text" name="email">
+        <label for="email"> Your e-mail<span><?php echo $required['email']?></span>
+        <span class='correct'><?php echo $successes['email']?></span>
+        <span class='wrong'><?php echo $errors['email']?></span></label>
+        <input type="text" name="email" value="<?php echo htmlspecialchars($email)?>">
         
-        <label for="password">Your password <span>&nbsp;<?php echo $errors['password']?></span</label>
-        <input type="password" name="password">
+        <label for="password">Your password <span><?php echo $required['password']?></span>
+        <span class='correct'><?php echo $succeses['password']?></span>
+        <span class='wrong'><?php echo $errors['password']?></span></label>
+        <input type="password" name="password" value="<?php echo htmlspecialchars($password)?>">
         
 <?php include 'footer.php'?>
     
